@@ -1,7 +1,5 @@
 # Reflection
 
-Draft in plain language. Edit it into your own voice before submitting.
-
 ## What I built
 
 A system where five analysis agents read hiring data, a retrieval step pulls the matching hiring guidelines, a routing step picks a cheaper or stronger model per agent, an LLM writes one recommendation per agent, and an evaluation agent checks each recommendation before a manager sees it. A Streamlit dashboard shows the insights with their quality badge, the cost per agent, and the before/after cost comparison.
