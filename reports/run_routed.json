@@ -1,0 +1,1228 @@
+{
+  "system": "AI-Powered Hiring Intelligence System",
+  "run_label": "routed",
+  "analysis_report": {
+    "system": "AI-Powered Hiring Intelligence System",
+    "agents_executed": [
+      "sourcing_quality",
+      "rejection_patterns",
+      "panel_load",
+      "offer_insights",
+      "pipeline_health"
+    ],
+    "results": {
+      "sourcing_quality": {
+        "agent": "Sourcing Quality Agent",
+        "summary": [
+          {
+            "source": "Campus",
+            "candidate_count": 14,
+            "rejected_candidates": 5,
+            "rejection_rate": 0.357,
+            "offers": 2,
+            "resolved_offers": 2,
+            "accepted_offers": 1,
+            "offer_acceptance_rate": 0.5,
+            "warnings": []
+          },
+          {
+            "source": "Job Board",
+            "candidate_count": 32,
+            "rejected_candidates": 23,
+            "rejection_rate": 0.719,
+            "offers": 2,
+            "resolved_offers": 1,
+            "accepted_offers": 1,
+            "offer_acceptance_rate": 1.0,
+            "warnings": []
+          },
+          {
+            "source": "Recruiter",
+            "candidate_count": 13,
+            "rejected_candidates": 4,
+            "rejection_rate": 0.308,
+            "offers": 3,
+            "resolved_offers": 2,
+            "accepted_offers": 1,
+            "offer_acceptance_rate": 0.5,
+            "warnings": []
+          },
+          {
+            "source": "Referral",
+            "candidate_count": 13,
+            "rejected_candidates": 4,
+            "rejection_rate": 0.308,
+            "offers": 6,
+            "resolved_offers": 6,
+            "accepted_offers": 4,
+            "offer_acceptance_rate": 0.667,
+            "warnings": []
+          }
+        ],
+        "current_stage_distribution": [
+          {
+            "source": "Campus",
+            "stage": "Applied",
+            "candidate_count": 1
+          },
+          {
+            "source": "Campus",
+            "stage": "Hired",
+            "candidate_count": 1
+          },
+          {
+            "source": "Campus",
+            "stage": "Interview",
+            "candidate_count": 1
+          },
+          {
+            "source": "Campus",
+            "stage": "Rejected",
+            "candidate_count": 5
+          },
+          {
+            "source": "Campus",
+            "stage": "Screen",
+            "candidate_count": 5
+          },
+          {
+            "source": "Campus",
+            "stage": "Withdrawn",
+            "candidate_count": 1
+          },
+          {
+            "source": "Job Board",
+            "stage": "Applied",
+            "candidate_count": 3
+          },
+          {
+            "source": "Job Board",
+            "stage": "Hired",
+            "candidate_count": 1
+          },
+          {
+            "source": "Job Board",
+            "stage": "Offer",
+            "candidate_count": 1
+          },
+          {
+            "source": "Job Board",
+            "stage": "Rejected",
+            "candidate_count": 23
+          },
+          {
+            "source": "Job Board",
+            "stage": "Screen",
+            "candidate_count": 4
+          },
+          {
+            "source": "Recruiter",
+            "stage": "Hired",
+            "candidate_count": 1
+          },
+          {
+            "source": "Recruiter",
+            "stage": "Interview",
+            "candidate_count": 1
+          },
+          {
+            "source": "Recruiter",
+            "stage": "Offer",
+            "candidate_count": 1
+          },
+          {
+            "source": "Recruiter",
+            "stage": "Rejected",
+            "candidate_count": 4
+          },
+          {
+            "source": "Recruiter",
+            "stage": "Screen",
+            "candidate_count": 5
+          },
+          {
+            "source": "Recruiter",
+            "stage": "Withdrawn",
+            "candidate_count": 1
+          },
+          {
+            "source": "Referral",
+            "stage": "Hired",
+            "candidate_count": 4
+          },
+          {
+            "source": "Referral",
+            "stage": "Interview",
+            "candidate_count": 1
+          },
+          {
+            "source": "Referral",
+            "stage": "Rejected",
+            "candidate_count": 4
+          },
+          {
+            "source": "Referral",
+            "stage": "Screen",
+            "candidate_count": 2
+          },
+          {
+            "source": "Referral",
+            "stage": "Withdrawn",
+            "candidate_count": 2
+          }
+        ],
+        "limitations": [
+          "Current-stage distribution is not stage-to-stage conversion.",
+          "Rejection rate uses rejection stage or recorded rejection reason.",
+          "Offer acceptance rates exclude unrecognized or unresolved responses.",
+          "Small samples may not support reliable comparisons.",
+          "These associations do not establish that a source causes better hiring outcomes."
+        ]
+      },
+      "rejection_patterns": {
+        "agent": "Rejection Pattern Agent",
+        "rejected_candidate_count": 36,
+        "rejection_reason_counts": [
+          {
+            "rejection_reason": "Experience Mismatch",
+            "count": 14
+          },
+          {
+            "rejection_reason": "Technical Skills",
+            "count": 13
+          },
+          {
+            "rejection_reason": "Communication",
+            "count": 8
+          },
+          {
+            "rejection_reason": "Compensation Expectations",
+            "count": 1
+          }
+        ],
+        "rejections_by_role": [
+          {
+            "role": "Data Analyst",
+            "rejected_candidates": 11
+          },
+          {
+            "role": "Data Scientist",
+            "rejected_candidates": 14
+          },
+          {
+            "role": "ML Engineer",
+            "rejected_candidates": 8
+          },
+          {
+            "role": "MLOps Engineer",
+            "rejected_candidates": 3
+          }
+        ],
+        "role_rejection_breakdown": [
+          {
+            "role": "Data Analyst",
+            "rejected_candidates": 11,
+            "reasons": [
+              {
+                "reason": "Experience Mismatch",
+                "count": 8
+              },
+              {
+                "reason": "Communication",
+                "count": 2
+              },
+              {
+                "reason": "Technical Skills",
+                "count": 1
+              }
+            ],
+            "rejections_by_stage": {
+              "Screen": 8,
+              "Behavioral": 2,
+              "Technical": 1
+            },
+            "screen_experience_mismatch_count": 8,
+            "screen_experience_mismatch_share": 0.727,
+            "jd_problem_signal": true,
+            "technical_stage_rejections": 1,
+            "top_technical_feedback": {
+              "feedback_text": "Weak Python problem solving",
+              "count": 1
+            }
+          },
+          {
+            "role": "Data Scientist",
+            "rejected_candidates": 14,
+            "reasons": [
+              {
+                "reason": "Communication",
+                "count": 5
+              },
+              {
+                "reason": "Technical Skills",
+                "count": 4
+              },
+              {
+                "reason": "Experience Mismatch",
+                "count": 4
+              },
+              {
+                "reason": "Compensation Expectations",
+                "count": 1
+              }
+            ],
+            "rejections_by_stage": {
+              "Screen": 5,
+              "Behavioral": 5,
+              "Technical": 4
+            },
+            "screen_experience_mismatch_count": 4,
+            "screen_experience_mismatch_share": 0.286,
+            "jd_problem_signal": false,
+            "technical_stage_rejections": 4,
+            "top_technical_feedback": {
+              "feedback_text": "Weak SQL fundamentals",
+              "count": 2
+            }
+          },
+          {
+            "role": "ML Engineer",
+            "rejected_candidates": 8,
+            "reasons": [
+              {
+                "reason": "Technical Skills",
+                "count": 6
+              },
+              {
+                "reason": "Communication",
+                "count": 1
+              },
+              {
+                "reason": "Experience Mismatch",
+                "count": 1
+              }
+            ],
+            "rejections_by_stage": {
+              "Technical": 6,
+              "Behavioral": 1,
+              "Screen": 1
+            },
+            "screen_experience_mismatch_count": 1,
+            "screen_experience_mismatch_share": 0.125,
+            "jd_problem_signal": false,
+            "technical_stage_rejections": 6,
+            "top_technical_feedback": {
+              "feedback_text": "Could not explain model tradeoffs",
+              "count": 3
+            }
+          },
+          {
+            "role": "MLOps Engineer",
+            "rejected_candidates": 3,
+            "reasons": [
+              {
+                "reason": "Technical Skills",
+                "count": 2
+              },
+              {
+                "reason": "Experience Mismatch",
+                "count": 1
+              }
+            ],
+            "rejections_by_stage": {
+              "Technical": 2,
+              "Screen": 1
+            },
+            "screen_experience_mismatch_count": 1,
+            "screen_experience_mismatch_share": 0.333,
+            "jd_problem_signal": false,
+            "technical_stage_rejections": 2,
+            "top_technical_feedback": {
+              "feedback_text": "Could not explain model tradeoffs",
+              "count": 2
+            }
+          }
+        ],
+        "interviewer_rejection_rates": [
+          {
+            "interviewer_id": "I001",
+            "candidates": 19,
+            "rejected": 10,
+            "rejection_rate": 0.526
+          },
+          {
+            "interviewer_id": "I002",
+            "candidates": 11,
+            "rejected": 6,
+            "rejection_rate": 0.545
+          },
+          {
+            "interviewer_id": "I003",
+            "candidates": 14,
+            "rejected": 9,
+            "rejection_rate": 0.643
+          },
+          {
+            "interviewer_id": "I006",
+            "candidates": 5,
+            "rejected": 3,
+            "rejection_rate": 0.6
+          },
+          {
+            "interviewer_id": "I007",
+            "candidates": 10,
+            "rejected": 3,
+            "rejection_rate": 0.3
+          },
+          {
+            "interviewer_id": "I008",
+            "candidates": 7,
+            "rejected": 4,
+            "rejection_rate": 0.571
+          }
+        ],
+        "negative_feedback_count": 36,
+        "negative_feedback_by_interview_stage": [
+          {
+            "interview_stage": "Behavioral",
+            "negative_feedback_count": 8
+          },
+          {
+            "interview_stage": "Screen",
+            "negative_feedback_count": 15
+          },
+          {
+            "interview_stage": "Technical",
+            "negative_feedback_count": 13
+          }
+        ],
+        "repeated_negative_feedback": [
+          {
+            "feedback_text": "Could not explain model tradeoffs",
+            "count": 6
+          },
+          {
+            "feedback_text": "Examples lacked clarity",
+            "count": 6
+          },
+          {
+            "feedback_text": "Background not aligned with job requirements",
+            "count": 6
+          },
+          {
+            "feedback_text": "Relevant experience too limited",
+            "count": 5
+          },
+          {
+            "feedback_text": "Weak Python problem solving",
+            "count": 5
+          },
+          {
+            "feedback_text": "Experience did not match role",
+            "count": 3
+          },
+          {
+            "feedback_text": "Weak SQL fundamentals",
+            "count": 2
+          },
+          {
+            "feedback_text": "Hard to follow project explanations",
+            "count": 2
+          },
+          {
+            "feedback_text": "Expectations far above role band",
+            "count": 1
+          }
+        ],
+        "warnings": [],
+        "limitations": [
+          "Only candidates currently marked Rejected are counted.",
+          "Only recognized negative decision labels are included.",
+          "Repeated text is an exact-text match, not semantic theme detection.",
+          "Observed patterns do not establish why a candidate was rejected.",
+          "Rejection stage is taken from the last negative feedback record.",
+          "Interviewer rejection rates only cover interviewers with at least 5 candidates."
+        ]
+      },
+      "panel_load": {
+        "agent": "Panel Load Balancer",
+        "interviewers": [
+          {
+            "interviewer_id": "I001",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 8,
+            "capacity_per_week": 6,
+            "over_capacity": 2,
+            "available_capacity": 0,
+            "utilization": 1.333,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 2 interviews."
+          },
+          {
+            "interviewer_id": "I001",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 9,
+            "capacity_per_week": 6,
+            "over_capacity": 3,
+            "available_capacity": 0,
+            "utilization": 1.5,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 3 interviews."
+          },
+          {
+            "interviewer_id": "I001",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 8,
+            "capacity_per_week": 6,
+            "over_capacity": 2,
+            "available_capacity": 0,
+            "utilization": 1.333,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 2 interviews."
+          },
+          {
+            "interviewer_id": "I001",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 7,
+            "capacity_per_week": 6,
+            "over_capacity": 1,
+            "available_capacity": 0,
+            "utilization": 1.167,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 1 interviews."
+          },
+          {
+            "interviewer_id": "I002",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 5,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 1,
+            "utilization": 0.833,
+            "status": "Within capacity",
+            "recommendation": "1 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I002",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 6,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 0,
+            "utilization": 1.0,
+            "status": "At capacity",
+            "recommendation": "Avoid assigning additional interviews without a capacity review."
+          },
+          {
+            "interviewer_id": "I002",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 7,
+            "capacity_per_week": 6,
+            "over_capacity": 1,
+            "available_capacity": 0,
+            "utilization": 1.167,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 1 interviews."
+          },
+          {
+            "interviewer_id": "I002",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 5,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 1,
+            "utilization": 0.833,
+            "status": "Within capacity",
+            "recommendation": "1 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I003",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 7,
+            "capacity_per_week": 5,
+            "over_capacity": 2,
+            "available_capacity": 0,
+            "utilization": 1.4,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 2 interviews."
+          },
+          {
+            "interviewer_id": "I003",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 7,
+            "capacity_per_week": 5,
+            "over_capacity": 2,
+            "available_capacity": 0,
+            "utilization": 1.4,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 2 interviews."
+          },
+          {
+            "interviewer_id": "I003",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 6,
+            "capacity_per_week": 5,
+            "over_capacity": 1,
+            "available_capacity": 0,
+            "utilization": 1.2,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 1 interviews."
+          },
+          {
+            "interviewer_id": "I003",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 8,
+            "capacity_per_week": 5,
+            "over_capacity": 3,
+            "available_capacity": 0,
+            "utilization": 1.6,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 3 interviews."
+          },
+          {
+            "interviewer_id": "I004",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 4,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 2,
+            "utilization": 0.667,
+            "status": "Within capacity",
+            "recommendation": "2 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I004",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 5,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 1,
+            "utilization": 0.833,
+            "status": "Within capacity",
+            "recommendation": "1 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I004",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 4,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 2,
+            "utilization": 0.667,
+            "status": "Within capacity",
+            "recommendation": "2 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I004",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 6,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 0,
+            "utilization": 1.0,
+            "status": "At capacity",
+            "recommendation": "Avoid assigning additional interviews without a capacity review."
+          },
+          {
+            "interviewer_id": "I005",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 3,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 3,
+            "utilization": 0.5,
+            "status": "Within capacity",
+            "recommendation": "3 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I005",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 2,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 4,
+            "utilization": 0.333,
+            "status": "Within capacity",
+            "recommendation": "4 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I005",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 4,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 2,
+            "utilization": 0.667,
+            "status": "Within capacity",
+            "recommendation": "2 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I005",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 3,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 3,
+            "utilization": 0.5,
+            "status": "Within capacity",
+            "recommendation": "3 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I006",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 4,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 1,
+            "utilization": 0.8,
+            "status": "Within capacity",
+            "recommendation": "1 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I006",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 5,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 0,
+            "utilization": 1.0,
+            "status": "At capacity",
+            "recommendation": "Avoid assigning additional interviews without a capacity review."
+          },
+          {
+            "interviewer_id": "I006",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 5,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 0,
+            "utilization": 1.0,
+            "status": "At capacity",
+            "recommendation": "Avoid assigning additional interviews without a capacity review."
+          },
+          {
+            "interviewer_id": "I006",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 4,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 1,
+            "utilization": 0.8,
+            "status": "Within capacity",
+            "recommendation": "1 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I007",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 6,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 0,
+            "utilization": 1.0,
+            "status": "At capacity",
+            "recommendation": "Avoid assigning additional interviews without a capacity review."
+          },
+          {
+            "interviewer_id": "I007",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 6,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 0,
+            "utilization": 1.0,
+            "status": "At capacity",
+            "recommendation": "Avoid assigning additional interviews without a capacity review."
+          },
+          {
+            "interviewer_id": "I007",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 7,
+            "capacity_per_week": 6,
+            "over_capacity": 1,
+            "available_capacity": 0,
+            "utilization": 1.167,
+            "status": "Over capacity",
+            "recommendation": "Review reassignment of up to 1 interviews."
+          },
+          {
+            "interviewer_id": "I007",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 6,
+            "capacity_per_week": 6,
+            "over_capacity": 0,
+            "available_capacity": 0,
+            "utilization": 1.0,
+            "status": "At capacity",
+            "recommendation": "Avoid assigning additional interviews without a capacity review."
+          },
+          {
+            "interviewer_id": "I008",
+            "week_start": "2026-09-28",
+            "interviews_assigned": 2,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 3,
+            "utilization": 0.4,
+            "status": "Within capacity",
+            "recommendation": "3 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I008",
+            "week_start": "2026-10-05",
+            "interviews_assigned": 3,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 2,
+            "utilization": 0.6,
+            "status": "Within capacity",
+            "recommendation": "2 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I008",
+            "week_start": "2026-10-12",
+            "interviews_assigned": 2,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 3,
+            "utilization": 0.4,
+            "status": "Within capacity",
+            "recommendation": "3 interview slots remain available."
+          },
+          {
+            "interviewer_id": "I008",
+            "week_start": "2026-10-19",
+            "interviews_assigned": 3,
+            "capacity_per_week": 5,
+            "over_capacity": 0,
+            "available_capacity": 2,
+            "utilization": 0.6,
+            "status": "Within capacity",
+            "recommendation": "2 interview slots remain available."
+          }
+        ],
+        "over_capacity_count": 10,
+        "limitations": [
+          "Capacity counts do not capture interview complexity or duration.",
+          "Reassignment requires checking role expertise and availability.",
+          "The results describe the supplied week only."
+        ]
+      },
+      "offer_insights": {
+        "agent": "Offer Insights Agent",
+        "total_offer_records": 13,
+        "resolved_offers": 11,
+        "accepted_offers": 7,
+        "declined_offers": 4,
+        "acceptance_rate": 0.636,
+        "decline_reason_counts": [
+          {
+            "decline_reason": "Compensation",
+            "count": 3
+          },
+          {
+            "decline_reason": "Accepted another offer",
+            "count": 1
+          }
+        ],
+        "salary_summary": {
+          "offers_with_salary": 13,
+          "mean_offered_salary": 1707692.31,
+          "median_offered_salary": 1600000.0
+        },
+        "offer_speed": {
+          "offers_with_dates": 13,
+          "avg_days_final_interview_to_offer": 7.8,
+          "offers_within_7_days": 8,
+          "offers_delayed_over_14_days": 1,
+          "declines_among_delayed": 1,
+          "declines_among_within_7_days": 0
+        },
+        "warnings": [
+          "2 offer records have unresolved or unrecognized responses."
+        ],
+        "limitations": [
+          "A small number of offers cannot establish reliable trends.",
+          "Salary comparisons require comparable roles, levels, and currencies.",
+          "Recorded decline reasons may be missing or incomplete.",
+          "Acceptance rates describe observed outcomes, not their causes."
+        ]
+      },
+      "pipeline_health": {
+        "agent": "Pipeline Health Agent",
+        "total_candidates": 72,
+        "stage_distribution": [
+          {
+            "stage": "Rejected",
+            "candidate_count": 36,
+            "candidate_share": 0.5
+          },
+          {
+            "stage": "Screen",
+            "candidate_count": 16,
+            "candidate_share": 0.222
+          },
+          {
+            "stage": "Hired",
+            "candidate_count": 7,
+            "candidate_share": 0.097
+          },
+          {
+            "stage": "Withdrawn",
+            "candidate_count": 4,
+            "candidate_share": 0.056
+          },
+          {
+            "stage": "Applied",
+            "candidate_count": 4,
+            "candidate_share": 0.056
+          },
+          {
+            "stage": "Interview",
+            "candidate_count": 3,
+            "candidate_share": 0.042
+          },
+          {
+            "stage": "Offer",
+            "candidate_count": 2,
+            "candidate_share": 0.028
+          }
+        ],
+        "role_distribution": [
+          {
+            "role": "Data Scientist",
+            "candidate_count": 28
+          },
+          {
+            "role": "Data Analyst",
+            "candidate_count": 23
+          },
+          {
+            "role": "ML Engineer",
+            "candidate_count": 14
+          },
+          {
+            "role": "MLOps Engineer",
+            "candidate_count": 7
+          }
+        ],
+        "possible_bottlenecks": [],
+        "warnings": [],
+        "limitations": [
+          "Stage counts describe the current snapshot only.",
+          "A large stage count does not prove a processing bottleneck.",
+          "Stage-transition conversion requires candidate stage history.",
+          "Wait times use the snapshot date (latest date in the data) and calendar days, not business days."
+        ],
+        "as_of_date": "2026-10-24",
+        "stage_wait_summary": [
+          {
+            "stage": "Applied",
+            "candidates": 4,
+            "avg_days_in_stage": 1.0,
+            "max_days_in_stage": 3,
+            "sla_target_days": 3,
+            "breach_threshold_days": 4.5,
+            "breach_count": 0,
+            "breach_rate": 0.0
+          },
+          {
+            "stage": "Screen",
+            "candidates": 16,
+            "avg_days_in_stage": 5.4,
+            "max_days_in_stage": 24,
+            "sla_target_days": 7,
+            "breach_threshold_days": 10.5,
+            "breach_count": 2,
+            "breach_rate": 0.125
+          },
+          {
+            "stage": "Interview",
+            "candidates": 3,
+            "avg_days_in_stage": 12.0,
+            "max_days_in_stage": 17,
+            "sla_target_days": 5,
+            "breach_threshold_days": 7.5,
+            "breach_count": 2,
+            "breach_rate": 0.667
+          }
+        ],
+        "sla_breach_count": 4,
+        "role_age": [
+          {
+            "role": "Data Analyst",
+            "days_since_first_application": 75,
+            "has_offer_stage_candidate": true,
+            "open_too_long": false
+          },
+          {
+            "role": "Data Scientist",
+            "days_since_first_application": 75,
+            "has_offer_stage_candidate": true,
+            "open_too_long": false
+          },
+          {
+            "role": "ML Engineer",
+            "days_since_first_application": 71,
+            "has_offer_stage_candidate": true,
+            "open_too_long": false
+          },
+          {
+            "role": "MLOps Engineer",
+            "days_since_first_application": 68,
+            "has_offer_stage_candidate": false,
+            "open_too_long": true
+          }
+        ],
+        "roles_open_too_long": [
+          "MLOps Engineer"
+        ]
+      }
+    }
+  },
+  "llm_insights": {
+    "sourcing_quality": {
+      "agent_name": "Sourcing Quality Agent",
+      "insight": {
+        "recommendation": "The Talent Acquisition Manager should focus on increasing hires via the Referral source. Referral has the highest offer acceptance rate (66.7%) and the highest number of accepted offers (4 accepted), indicating stronger candidate quality and hiring efficiency compared to others. However, since the sample size for sources ranges between 13-32 candidates each, confidence is moderate. As an alternative, prioritize improving screening criteria or candidate experience for the Campus source, which shows moderate rejection rates (35.7%) and some hiring success, potentially increasing offer acceptance among junior roles. Review these strategies monthly for impact.",
+        "evidence": [
+          "Referral source has 13 candidates, 6 offers extended, and 4 accepted offers, yielding a 66.7% offer acceptance rate, better than other sources.",
+          "Job Board has highest rejection rate at 71.9%, suggesting lower sourcing quality and higher screening costs.",
+          "Campus source has intermediate rejection rate at 35.7% and 1 hire out of 14 candidates, often used for junior roles per context.",
+          "Recruiter and Campus sources have similar rejection rates (~30%) and offer acceptance rates (~50%)."
+        ],
+        "confidence_score": 0.6,
+        "cost_of_insight": 0.0010548,
+        "alternative": "Alternatively, the Recruiting team could investigate and optimize the screening process for Campus hires to improve hire conversion and acceptance rates, given that Campus sources show some potential with moderate rejection and acceptance metrics."
+      },
+      "model": "gpt-4.1-mini",
+      "input_tokens": 1505,
+      "output_tokens": 283,
+      "estimated_api_cost_usd": 0.0010548,
+      "retrieved_context": [
+        {
+          "text": "Judge a source by offer-acceptance and rejection rate, not application volume. A source with high volume but a rejection rate above 70% is a screening cost, not a quality channel. Synthetic demonstration guideline.",
+          "source": "sourcing.md",
+          "section": "Source quality metric"
+        },
+        {
+          "text": "Referrals typically convert best: expect 30-40% of referred candidates to reach offer stage. Recruiter-sourced candidates: 15-25%. Job boards: 5-10%. Campus: 5-15% and mostly for junior roles. Treat a channel far below its range as a candidate for deprioritising. Synthetic demonstration ranges, not industry benchmarks.",
+          "source": "sourcing.md",
+          "section": "Expected conversion by channel"
+        },
+        {
+          "text": "Label any conclusion drawn from fewer than 10 records as low confidence and state the sample size. Synthetic demonstration guideline.",
+          "source": "responsible_use.md",
+          "section": "Small samples"
+        }
+      ],
+      "routing": {
+        "agent": "sourcing_quality",
+        "model": "gpt-4.1-mini",
+        "complexity_score": 3,
+        "est_input_tokens": 675,
+        "reason": "score 3 >= 3: complex reasoning"
+      },
+      "attempts": 1,
+      "fallback": false,
+      "latency_seconds": 4.94
+    },
+    "rejection_patterns": {
+      "agent_name": "Rejection Pattern Agent",
+      "insight": {
+        "recommendation": "For the Data Analyst role, where 73% of screen-stage rejections cite experience mismatch and a job description problem signal is detected, the hiring manager should lead a review and rewrite of the job description to better align required experience with candidate profiles. This action aims to reduce early screen-stage rejections due to experience mismatch by clarifying requirements and attracting suitable candidates.",
+        "evidence": [
+          "Data Analyst role has 11 rejected candidates.",
+          "8 out of 11 Data Analyst rejections at screen stage cite experience mismatch (73%).",
+          "The analysis flags a job description problem signal for Data Analyst role.",
+          "Other roles do not show a similar high share of screen-stage experience mismatch rejections.",
+          "Repeated negative feedback includes 'Background not aligned with job requirements' and 'Relevant experience too limited'.",
+          "No warnings or contradictory evidence to challenge this finding."
+        ],
+        "confidence_score": 0.7,
+        "cost_of_insight": 0.0011784,
+        "alternative": "For roles like ML Engineer and MLOps Engineer, where technical stage rejections are high with repetitive feedback such as 'Could not explain model tradeoffs', the interview process owner should review and calibrate technical interview questions and interviewer scoring to ensure role-relevant skills are properly assessed and candidate evaluation is consistent."
+      },
+      "model": "gpt-4.1-mini",
+      "input_tokens": 1958,
+      "output_tokens": 247,
+      "estimated_api_cost_usd": 0.0011784,
+      "retrieved_context": [
+        {
+          "text": "If one role shows many screen-stage rejections citing experience mismatch (above 30% of its rejections), the job description or sourcing is the likely problem, not the interview. Recommend rewriting the JD requirements. Synthetic demonstration guideline.",
+          "source": "rejection.md",
+          "section": "Job description problem signal"
+        },
+        {
+          "text": "If rejections cluster at the technical stage for one role and cite the same skill gap repeatedly, check whether the interview tests what the job needs. If different interviewers reject at very different rates for the same role, review interviewer calibration. Synthetic demonstration guideline.",
+          "source": "rejection.md",
+          "section": "Interview process problem signal"
+        },
+        {
+          "text": "Typical recorded reasons are technical skills, experience mismatch, communication, and compensation expectations. Group by role and stage and separate observed counts from hypotheses. Never infer protected characteristics from feedback text. Synthetic demonstration guideline.",
+          "source": "rejection.md",
+          "section": "Common rejection reasons"
+        }
+      ],
+      "routing": {
+        "agent": "rejection_patterns",
+        "model": "gpt-4.1-mini",
+        "complexity_score": 3,
+        "est_input_tokens": 1115,
+        "reason": "score 3 >= 3: complex reasoning"
+      },
+      "attempts": 1,
+      "fallback": false,
+      "latency_seconds": 3.71
+    },
+    "panel_load": {
+      "agent_name": "Panel Load Balancer",
+      "insight": {
+        "recommendation": "Review interview assignments for interviewer I003 particularly for week starting 2026-10-19, where the utilization is highest at 1.6 (160%) and 3 interviews are over capacity. Also address interviewer I001's consistently over capacity load across multiple weeks with up to 3 interviews needing reassignment. Reassign excess interviews to underutilized interviewers such as I005 and I008 who have utilization well below 50%, ensuring role and stage fit. HR operations should coordinate with team leads to reassign interviews progressively to balance the load across the panel and avoid urgent overcapacity.",
+        "evidence": [
+          "10 interviewers exceed capacity in various weeks, with utilization ratios exceeding 100%, notably I003 at 1.6 utilization and 3 interviews over capacity on 2026-10-19.",
+          "Interviewers I005 and I008 have utilization as low as 0.333 to 0.6, indicating available capacity to take reassigned interviews according to policy guidance.",
+          "The repeated overcapacity for interviewer I001 over four weeks (utilization 1.167 to 1.5) suggests a persistent imbalance.",
+          "Panel load guidance indicates no interviewer should exceed 100% utilization, and urgent reassignment is recommended above 120%.",
+          "Reassignment should consider role expertise and avoid last-minute moves without candidate consent."
+        ],
+        "confidence_score": 0.8,
+        "cost_of_insight": 0.0018844,
+        "alternative": "If reassigning interviews is complicated by role expertise constraints, consider temporarily increasing weekly capacity for highly loaded interviewers with their agreement, or scheduling additional interview slots with underutilized interviewers for upcoming weeks to accommodate future demand and reduce immediate overloads."
+      },
+      "model": "gpt-4.1-mini",
+      "input_tokens": 3359,
+      "output_tokens": 338,
+      "estimated_api_cost_usd": 0.0018844,
+      "retrieved_context": [
+        {
+          "text": "No interviewer should exceed their stated weekly capacity. Above 100% utilisation, recommend reassigning the excess interviews. Above 120% is urgent. Synthetic demonstration threshold.",
+          "source": "panel_load.md",
+          "section": "Weekly interview limit"
+        },
+        {
+          "text": "Interviewers below 50% utilisation are candidates for taking reassigned interviews, provided they have the right role expertise. Synthetic demonstration guideline.",
+          "source": "panel_load.md",
+          "section": "Underused interviewers"
+        },
+        {
+          "text": "Reassign only to interviewers qualified for the role and stage, and never move an interview in the final 24 hours without the candidate's agreement. Prefer spreading load over the whole panel rather than moving everything to one person. Synthetic demonstration guideline.",
+          "source": "panel_load.md",
+          "section": "Rebalancing rules"
+        }
+      ],
+      "routing": {
+        "agent": "panel_load",
+        "model": "gpt-4.1-mini",
+        "complexity_score": 4,
+        "est_input_tokens": 2187,
+        "reason": "score 4 >= 3: complex reasoning"
+      },
+      "attempts": 1,
+      "fallback": false,
+      "latency_seconds": 4.61
+    },
+    "offer_insights": {
+      "agent_name": "Offer Insights Agent",
+      "insight": {
+        "recommendation": "The hiring team should review the offered salaries for the positions associated with the declined offers, particularly focusing on the three declines due to compensation. This review should ensure the offered salaries are competitive against the salary band for those specific roles and levels, potentially adjusting future offers based on findings. This should be prioritized by the compensation analyst at the offer stage.",
+        "evidence": [
+          "Total offers in the analysis: 13",
+          "Resolved offers: 11",
+          "Accepted offers: 7",
+          "Declined offers: 4",
+          "Declines due to compensation: 3",
+          "Acceptance rate: 0.636, which is below the target of 75%."
+        ],
+        "confidence_score": 0.5,
+        "cost_of_insight": 0.000273,
+        "alternative": "As an alternative, the hiring team could improve the speed of the offer process by ensuring that all offers are issued within 7 days of the final interview. This could help mitigate declines due to accepted other offers, especially since out of 8 offers made within 7 days, none were declined."
+      },
+      "model": "gpt-4o-mini",
+      "input_tokens": 988,
+      "output_tokens": 208,
+      "estimated_api_cost_usd": 0.000273,
+      "retrieved_context": [
+        {
+          "text": "Typical decline reasons are compensation, accepted another offer, role scope, location, and slow process. If compensation is the top reason across at least 3 declines, review offered salary against the band for that role. Declines for accepting another offer often point to speed, not pay. Synthetic demonstration guideline.",
+          "source": "offers.md",
+          "section": "Decline reasons"
+        },
+        {
+          "text": "Compare an offer against the salary band for the same role and level only. Do not compare across roles. If a declined offer sits below the band midpoint and the reason is compensation, recommend a band review. Missing decline reasons must be labelled unknown. Synthetic demonstration guideline.",
+          "source": "offers.md",
+          "section": "Compensation bands"
+        },
+        {
+          "text": "Target an offer acceptance rate of at least 75% of resolved offers. Below 60% is a concern worth a root-cause review. Do not report a trend with fewer than 5 resolved offers. Synthetic demonstration target.",
+          "source": "offers.md",
+          "section": "Offer acceptance target"
+        }
+      ],
+      "routing": {
+        "agent": "offer_insights",
+        "model": "gpt-4o-mini",
+        "complexity_score": 2,
+        "est_input_tokens": 240,
+        "reason": "score 2 < 3: simple task"
+      },
+      "attempts": 1,
+      "fallback": false,
+      "latency_seconds": 3.99
+    },
+    "pipeline_health": {
+      "agent_name": "Pipeline Health Agent",
+      "insight": {
+        "recommendation": "Recruitment operations should prioritize reducing wait time in the Interview stage for all roles, especially focusing on the few candidates currently held there, as the breach rate is high at 66.7% and average days in stage (12 days) exceed the SLA target (5 days) substantially. Additionally, the MLOps Engineer role should be reviewed for prolonged open status since it has been open too long (68 days) and currently has no candidates in Offer stage, indicating potential sourcing or progression challenges for that role. As an alternative, the team could review the Screening process to reduce variability and breaches (12.5% breach rate) by allocating more screeners or optimizing screening criteria for better throughput.",
+        "evidence": [
+          "Interview stage has average wait of 12 days versus SLA target of 5 days with 66.7% breach rate (2 breaches out of 3 candidates).",
+          "MLOps Engineer role open for 68 days, flagged as open too long, with no candidates in Offer stage.",
+          "Screen stage with 16 candidates has 12.5% breach rate and average days (5.4) slightly below SLA target (7 days).",
+          "No bottlenecks formally identified, but Interview stage exceeds wait targets significantly, indicating a slow stage worth addressing."
+        ],
+        "confidence_score": 0.8,
+        "cost_of_insight": 0.0010756,
+        "alternative": "Recruitment leadership could instead focus on accelerating the transition from Screen to Interview stages by improving interviewer availability or better candidate pre-selection to smooth bottleneck risk before Interview stage, potentially improving overall pipeline velocity."
+      },
+      "model": "gpt-4.1-mini",
+      "input_tokens": 1429,
+      "output_tokens": 315,
+      "estimated_api_cost_usd": 0.0010756,
+      "retrieved_context": [
+        {
+          "text": "If a single active stage holds more than 40% of candidates and its average wait is above target, treat it as a bottleneck and review capacity at that stage first. A large stage count alone does not prove a bottleneck. Synthetic demonstration guideline.",
+          "source": "pipeline.md",
+          "section": "Bottleneck rule"
+        },
+        {
+          "text": "Expect roughly 40-60% of applicants to pass the screen, 30-50% of those to pass the technical interview, and 50-70% of finalists to receive an offer. Compare stage conversion, not only totals. Do not claim time-in-stage unless entry dates exist. Synthetic demonstration ranges.",
+          "source": "pipeline.md",
+          "section": "Stage conversion ranges"
+        },
+        {
+          "text": "Application to recruiter screen: 3 business days. Screen to technical interview: 7 days. Technical interview to written feedback: 2 days. Final interview to decision: 3 days. A stage is breached when the wait exceeds its target by more than 50%. Synthetic demonstration targets.",
+          "source": "pipeline.md",
+          "section": "Stage SLA targets"
+        }
+      ],
+      "routing": {
+        "agent": "pipeline_health",
+        "model": "gpt-4.1-mini",
+        "complexity_score": 3,
+        "est_input_tokens": 575,
+        "reason": "score 3 >= 3: complex reasoning"
+      },
+      "attempts": 1,
+      "fallback": false,
+      "latency_seconds": 4.0
+    }
+  },
+  "fallback_agents": [],
+  "errors": [],
+  "usage_summary": {
+    "llm_calls": 5,
+    "total_input_tokens": 9239,
+    "total_output_tokens": 1391,
+    "total_estimated_api_cost_usd": 0.0054662,
+    "total_latency_seconds": 21.25
+  }
+}

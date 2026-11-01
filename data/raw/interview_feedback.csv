@@ -1,0 +1,98 @@
+feedback_id,candidate_id,interview_stage,feedback,decision,interviewer_id,feedback_date
+F001,C001,Screen,Experience did not match role,Reject,I001,2026-10-05
+F002,C002,Screen,Good fit on screen,Advance,I008,2026-10-20
+F003,C003,Technical,Could not explain model tradeoffs,Reject,I007,2026-10-18
+F004,C004,Screen,Background not aligned with job requirements,Reject,I008,2026-09-03
+F005,C005,Screen,Good fit on screen,Advance,I003,2026-08-15
+F006,C005,Technical,Good Python and modeling,Advance,I003,2026-10-06
+F007,C007,Screen,Clear motivation and relevant background,Advance,I004,2026-09-15
+F008,C008,Screen,Clear motivation and relevant background,Advance,I005,2026-09-02
+F009,C008,Technical,Good Python and modeling,Advance,I005,2026-09-03
+F010,C008,Behavioral,Clear examples and collaboration,Advance,I005,2026-08-28
+F011,C009,Behavioral,Examples lacked clarity,Reject,I006,2026-09-16
+F012,C010,Screen,Clear motivation and relevant background,Advance,I001,2026-09-29
+F013,C011,Screen,Clear motivation and relevant background,Advance,I001,2026-10-22
+F014,C012,Technical,Could not explain model tradeoffs,Reject,I006,2026-10-09
+F015,C013,Screen,Experience did not match role,Reject,I001,2026-10-24
+F016,C014,Behavioral,Examples lacked clarity,Reject,I003,2026-10-07
+F017,C015,Screen,Experience did not match role,Reject,I001,2026-09-08
+F018,C016,Screen,Clear motivation and relevant background,Advance,I008,2026-08-21
+F019,C017,Technical,Weak Python problem solving,Reject,I001,2026-09-18
+F020,C018,Screen,Good fit on screen,Advance,I006,2026-10-03
+F021,C020,Screen,Good fit on screen,Advance,I001,2026-10-21
+F022,C021,Technical,Weak Python problem solving,Reject,I008,2026-09-12
+F023,C022,Screen,Relevant experience too limited,Reject,I001,2026-09-02
+F024,C023,Technical,Weak Python problem solving,Reject,I008,2026-09-20
+F025,C024,Screen,Expectations far above role band,Reject,I003,2026-08-17
+F026,C025,Screen,Good fit on screen,Advance,I006,2026-09-06
+F027,C025,Technical,Strong model evaluation skills,Advance,I006,2026-10-20
+F028,C026,Screen,Clear motivation and relevant background,Advance,I002,2026-10-19
+F029,C027,Screen,Good fit on screen,Advance,I005,2026-10-22
+F030,C028,Behavioral,Examples lacked clarity,Reject,I007,2026-10-16
+F031,C029,Screen,Good fit on screen,Advance,I001,2026-10-01
+F032,C029,Technical,Good statistics and experimentation,Advance,I001,2026-09-29
+F033,C029,Behavioral,Clear examples and collaboration,Advance,I001,2026-09-24
+F034,C030,Screen,Good fit on screen,Advance,I001,2026-09-01
+F035,C031,Screen,Clear motivation and relevant background,Advance,I007,2026-08-22
+F036,C031,Technical,Good statistics and experimentation,Advance,I007,2026-08-23
+F037,C031,Behavioral,Clear examples and collaboration,Advance,I007,2026-08-20
+F038,C032,Screen,Good fit on screen,Advance,I007,2026-09-13
+F039,C032,Technical,Good statistics and experimentation,Advance,I007,2026-09-06
+F040,C032,Behavioral,Strong ownership stories,Advance,I007,2026-09-05
+F041,C033,Screen,Clear motivation and relevant background,Advance,I002,2026-08-19
+F042,C033,Technical,Good Python and modeling,Advance,I002,2026-08-26
+F043,C033,Behavioral,Clear examples and collaboration,Advance,I002,2026-08-22
+F044,C034,Screen,Relevant experience too limited,Reject,I001,2026-09-18
+F045,C035,Screen,Clear motivation and relevant background,Advance,I002,2026-09-06
+F046,C036,Screen,Background not aligned with job requirements,Reject,I002,2026-10-19
+F047,C037,Screen,Good fit on screen,Advance,I001,2026-08-15
+F048,C038,Screen,Background not aligned with job requirements,Reject,I003,2026-09-26
+F049,C039,Technical,Could not explain model tradeoffs,Reject,I005,2026-09-07
+F050,C040,Screen,Clear motivation and relevant background,Advance,I003,2026-09-05
+F051,C040,Technical,Strong model evaluation skills,Advance,I003,2026-10-07
+F052,C041,Screen,Background not aligned with job requirements,Reject,I007,2026-09-28
+F053,C042,Screen,Good fit on screen,Advance,I007,2026-09-02
+F054,C043,Technical,Weak SQL fundamentals,Reject,I008,2026-09-21
+F055,C044,Behavioral,Hard to follow project explanations,Reject,I003,2026-08-27
+F056,C045,Screen,Clear motivation and relevant background,Advance,I007,2026-08-20
+F057,C045,Technical,Good Python and modeling,Advance,I007,2026-08-13
+F058,C045,Behavioral,Strong ownership stories,Advance,I007,2026-08-14
+F059,C047,Behavioral,Examples lacked clarity,Reject,I003,2026-10-23
+F060,C048,Screen,Good fit on screen,Advance,I001,2026-09-19
+F061,C049,Behavioral,Examples lacked clarity,Reject,I002,2026-09-18
+F062,C050,Technical,Weak Python problem solving,Reject,I001,2026-09-25
+F063,C051,Screen,Good fit on screen,Advance,I003,2026-09-30
+F064,C051,Technical,Strong model evaluation skills,Advance,I003,2026-10-04
+F065,C051,Behavioral,Strong ownership stories,Advance,I003,2026-10-06
+F066,C052,Technical,Weak SQL fundamentals,Reject,I002,2026-09-24
+F067,C053,Screen,Clear motivation and relevant background,Advance,I004,2026-10-05
+F068,C054,Technical,Could not explain model tradeoffs,Reject,I002,2026-09-03
+F069,C055,Behavioral,Hard to follow project explanations,Reject,I002,2026-10-21
+F070,C056,Screen,Clear motivation and relevant background,Advance,I007,2026-08-24
+F071,C056,Technical,Good Python and modeling,Advance,I007,2026-08-14
+F072,C056,Behavioral,Clear examples and collaboration,Advance,I007,2026-08-17
+F073,C057,Screen,Relevant experience too limited,Reject,I006,2026-09-17
+F074,C058,Screen,Clear motivation and relevant background,Advance,I008,2026-08-30
+F075,C058,Technical,Good statistics and experimentation,Advance,I008,2026-09-05
+F076,C058,Behavioral,Strong ownership stories,Advance,I008,2026-09-01
+F077,C059,Behavioral,Examples lacked clarity,Reject,I003,2026-09-15
+F078,C060,Technical,Weak Python problem solving,Reject,I003,2026-09-03
+F079,C061,Screen,Good fit on screen,Advance,I003,2026-09-15
+F080,C062,Screen,Relevant experience too limited,Reject,I002,2026-09-17
+F081,C063,Technical,Could not explain model tradeoffs,Reject,I001,2026-10-09
+F082,C064,Screen,Background not aligned with job requirements,Reject,I003,2026-10-03
+F083,C065,Screen,Clear motivation and relevant background,Advance,I001,2026-09-18
+F084,C065,Technical,Good statistics and experimentation,Advance,I001,2026-09-18
+F085,C065,Behavioral,Strong ownership stories,Advance,I001,2026-09-11
+F086,C066,Screen,Background not aligned with job requirements,Reject,I003,2026-09-27
+F087,C067,Screen,Relevant experience too limited,Reject,I001,2026-10-03
+F088,C068,Screen,Clear motivation and relevant background,Advance,I007,2026-09-03
+F089,C068,Technical,Strong model evaluation skills,Advance,I007,2026-09-05
+F090,C068,Behavioral,Strong ownership stories,Advance,I007,2026-08-28
+F091,C069,Technical,Could not explain model tradeoffs,Reject,I001,2026-10-14
+F092,C070,Screen,Clear motivation and relevant background,Advance,I002,2026-09-27
+F093,C070,Technical,Strong model evaluation skills,Advance,I002,2026-09-25
+F094,C070,Behavioral,Strong ownership stories,Advance,I002,2026-09-25
+F095,C071,Screen,Clear motivation and relevant background,Advance,I001,2026-09-15
+F096,C071,Technical,Good statistics and experimentation,Advance,I001,2026-09-17
+F097,C071,Behavioral,Clear examples and collaboration,Advance,I001,2026-09-16

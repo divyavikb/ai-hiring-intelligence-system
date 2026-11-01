@@ -1,0 +1,301 @@
+{
+  "run_label": "routed",
+  "evaluations": {
+    "sourcing_quality": {
+      "score": 1.0,
+      "badge": "Green",
+      "accepted": true,
+      "rules_failed": [],
+      "overconfident": false,
+      "agent": "sourcing_quality",
+      "rule_checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "problems": []
+        },
+        {
+          "name": "responsible_use",
+          "passed": true,
+          "flagged_phrases": []
+        },
+        {
+          "name": "numeric_grounding",
+          "passed": true,
+          "numbers_checked": 16,
+          "ungrounded_numbers": [],
+          "grounded_ratio": 1.0
+        },
+        {
+          "name": "confidence_vs_sample",
+          "passed": true,
+          "small_sample_warnings": []
+        },
+        {
+          "name": "unsupported_bottleneck",
+          "passed": true
+        },
+        {
+          "name": "people_count",
+          "passed": true
+        }
+      ],
+      "judge": {
+        "actionability": 5,
+        "grounding": 5,
+        "hallucination_free": 5,
+        "overconfident": false,
+        "unsupported_claims": [],
+        "summary": "The insight correctly identifies the Job Board channel's high rejection rate (71.9%) as a potential quality or screening issue, consistent with guidelines that high rejection rates above 70% indicate costly screening. It also accurately notes the Referral channel's better performance with a lower rejection rate (30.8%) and higher offer acceptance rate (66.7%), aligning with expected conversion ranges. The recommendation to review and improve Job Board sourcing and consider boosting referrals is actionable and well grounded in the provided facts and guidelines. The alternative suggestion to prioritize recruiter-sourced candidates with moderate rejection and acceptance rates is also supported by the data. The confidence score of 0.7 is reasonable given the sample sizes, and no unsupported claims were found."
+      },
+      "judge_meta": {
+        "model": "gpt-4.1-mini",
+        "input_tokens": 2011,
+        "output_tokens": 178,
+        "estimated_api_cost_usd": 0.0010892,
+        "latency_seconds": 4.17
+      },
+      "judge_error": null,
+      "generator_model": "gpt-4.1-mini"
+    },
+    "rejection_patterns": {
+      "score": 1.0,
+      "badge": "Green",
+      "accepted": true,
+      "rules_failed": [],
+      "overconfident": false,
+      "agent": "rejection_patterns",
+      "rule_checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "problems": []
+        },
+        {
+          "name": "responsible_use",
+          "passed": true,
+          "flagged_phrases": []
+        },
+        {
+          "name": "numeric_grounding",
+          "passed": true,
+          "numbers_checked": 7,
+          "ungrounded_numbers": [],
+          "grounded_ratio": 1.0
+        },
+        {
+          "name": "confidence_vs_sample",
+          "passed": true,
+          "small_sample_warnings": []
+        },
+        {
+          "name": "unsupported_bottleneck",
+          "passed": true
+        },
+        {
+          "name": "people_count",
+          "passed": true
+        }
+      ],
+      "judge": {
+        "actionability": 5,
+        "grounding": 5,
+        "hallucination_free": 5,
+        "overconfident": false,
+        "unsupported_claims": [],
+        "summary": "The insight correctly identifies that experience mismatch and technical skill gaps are prominent rejection reasons, especially for Data Scientist and Data Analyst roles, supported by the counts in FACTS. It appropriately recommends reviewing job descriptions due to high experience mismatch at screening stages and improving technical interview calibration based on repeated negative feedback on Python and SQL skills, aligning with GUIDELINES. The confidence score is reasonable given the sample size (36 rejections), and the alternative suggestion is also grounded in the evidence. Overall, the insight is actionable, well-grounded, and free of unsupported claims."
+      },
+      "judge_meta": {
+        "model": "gpt-4.1-mini",
+        "input_tokens": 1607,
+        "output_tokens": 144,
+        "estimated_api_cost_usd": 0.0008732000000000001,
+        "latency_seconds": 1.67
+      },
+      "judge_error": null,
+      "generator_model": "gpt-4.1-mini"
+    },
+    "panel_load": {
+      "score": 1.0,
+      "badge": "Green",
+      "accepted": true,
+      "rules_failed": [],
+      "overconfident": false,
+      "agent": "panel_load",
+      "rule_checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "problems": []
+        },
+        {
+          "name": "responsible_use",
+          "passed": true,
+          "flagged_phrases": []
+        },
+        {
+          "name": "numeric_grounding",
+          "passed": true,
+          "numbers_checked": 10,
+          "ungrounded_numbers": [],
+          "grounded_ratio": 1.0
+        },
+        {
+          "name": "confidence_vs_sample",
+          "passed": true,
+          "small_sample_warnings": []
+        },
+        {
+          "name": "unsupported_bottleneck",
+          "passed": true
+        },
+        {
+          "name": "people_count",
+          "passed": true,
+          "mismatched": []
+        }
+      ],
+      "judge": {
+        "actionability": 5,
+        "grounding": 5,
+        "hallucination_free": 5,
+        "overconfident": false,
+        "unsupported_claims": [],
+        "summary": "The insight correctly identifies interviewers I001, I003, and I007 as over capacity, with utilization exceeding 1.2 in some weeks, matching the facts. It appropriately recommends reassigning interviews to underutilized interviewers I005 and I008, who have utilization below 0.6 and available capacity, consistent with guidelines. The recommendation to prioritize reassignments where utilization exceeds 1.2 aligns with the guideline that above 120% utilization is urgent. The alternative suggestion to increase capacity temporarily if reassignment is not feasible is reasonable and cautious. All claims are supported by the provided facts and guidelines, and the recommendation is actionable and well grounded."
+      },
+      "judge_meta": {
+        "model": "gpt-4.1-mini",
+        "input_tokens": 1912,
+        "output_tokens": 167,
+        "estimated_api_cost_usd": 0.001032,
+        "latency_seconds": 1.98
+      },
+      "judge_error": null,
+      "generator_model": "gpt-4.1-mini"
+    },
+    "offer_insights": {
+      "score": 0.867,
+      "badge": "Green",
+      "accepted": true,
+      "rules_failed": [],
+      "overconfident": false,
+      "agent": "offer_insights",
+      "rule_checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "problems": []
+        },
+        {
+          "name": "responsible_use",
+          "passed": true,
+          "flagged_phrases": []
+        },
+        {
+          "name": "numeric_grounding",
+          "passed": true,
+          "numbers_checked": 6,
+          "ungrounded_numbers": [],
+          "grounded_ratio": 1.0
+        },
+        {
+          "name": "confidence_vs_sample",
+          "passed": true,
+          "small_sample_warnings": []
+        },
+        {
+          "name": "unsupported_bottleneck",
+          "passed": true
+        },
+        {
+          "name": "people_count",
+          "passed": true
+        }
+      ],
+      "judge": {
+        "actionability": 4,
+        "grounding": 4,
+        "hallucination_free": 5,
+        "overconfident": false,
+        "unsupported_claims": [],
+        "summary": "The insight correctly identifies that compensation is the top decline reason (3 out of 4 declines, or 75%) and recommends reviewing offered salaries against the role's band, which aligns with guidelines. The acceptance rate is 63.6%, below the 75% target but above the 60% concern threshold, so the recommendation is reasonable. The alternative suggestion to improve offer speed is supported by the fact that no declines occurred for offers made within 7 days, and one delayed offer was declined. The confidence score of 0.6 is appropriate given the small sample size and the insight notes limitations. Overall, the insight is actionable and well grounded in the facts and guidelines."
+      },
+      "judge_meta": {
+        "model": "gpt-4.1-mini",
+        "input_tokens": 1331,
+        "output_tokens": 169,
+        "estimated_api_cost_usd": 0.0008028,
+        "latency_seconds": 1.97
+      },
+      "judge_error": null,
+      "generator_model": "gpt-4o-mini"
+    },
+    "pipeline_health": {
+      "score": 1.0,
+      "badge": "Green",
+      "accepted": true,
+      "rules_failed": [],
+      "overconfident": false,
+      "agent": "pipeline_health",
+      "rule_checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "problems": []
+        },
+        {
+          "name": "responsible_use",
+          "passed": true,
+          "flagged_phrases": []
+        },
+        {
+          "name": "numeric_grounding",
+          "passed": true,
+          "numbers_checked": 13,
+          "ungrounded_numbers": [],
+          "grounded_ratio": 1.0
+        },
+        {
+          "name": "confidence_vs_sample",
+          "passed": true,
+          "small_sample_warnings": []
+        },
+        {
+          "name": "unsupported_bottleneck",
+          "passed": true,
+          "detail": ""
+        },
+        {
+          "name": "people_count",
+          "passed": true
+        }
+      ],
+      "judge": {
+        "actionability": 5,
+        "grounding": 5,
+        "hallucination_free": 5,
+        "overconfident": false,
+        "unsupported_claims": [],
+        "summary": "The insight correctly identifies the Interview stage as a priority due to its average wait time of 12 days exceeding the 5-day SLA target and a high breach rate of 67%, both supported by the facts. It also appropriately highlights the MLOps Engineer role as open too long without candidates reaching the offer stage, matching the data. The recommendation to investigate interviewer availability and process efficiency is actionable and grounded. The alternative suggestion to focus on the Screen stage is reasonable and supported by the moderate breach rate and wait times. All claims are well supported by the provided facts and guidelines, with no unsupported or inaccurate statements."
+      },
+      "judge_meta": {
+        "model": "gpt-4.1-mini",
+        "input_tokens": 1981,
+        "output_tokens": 155,
+        "estimated_api_cost_usd": 0.0010404000000000001,
+        "latency_seconds": 2.07
+      },
+      "judge_error": null,
+      "generator_model": "gpt-4.1-mini"
+    }
+  },
+  "summary": {
+    "agents_evaluated": 5,
+    "mean_score": 0.973,
+    "green": 5,
+    "amber": 0,
+    "red": 0,
+    "unrated": 0,
+    "judge_cost_usd": 0.0048376
+  }
+}

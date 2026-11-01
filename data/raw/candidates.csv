@@ -1,0 +1,73 @@
+candidate_id,role,source,stage,application_date,rejection_reason,interviewer_id,stage_entered_date
+C001,Data Analyst,Campus,Rejected,2026-09-19,Experience Mismatch,I001,2026-10-06
+C002,Data Scientist,Job Board,Screen,2026-10-17,,I008,2026-10-18
+C003,Data Scientist,Referral,Rejected,2026-10-12,Technical Skills,I007,2026-10-18
+C004,Data Scientist,Recruiter,Rejected,2026-08-18,Experience Mismatch,I008,2026-09-04
+C005,Data Analyst,Campus,Interview,2026-08-11,,I003,2026-10-07
+C006,Data Analyst,Job Board,Applied,2026-09-12,,I007,2026-10-24
+C007,MLOps Engineer,Recruiter,Screen,2026-09-13,,I004,2026-09-30
+C008,Data Scientist,Recruiter,Withdrawn,2026-08-24,,I005,2026-10-07
+C009,ML Engineer,Job Board,Rejected,2026-08-31,Communication,I006,2026-09-16
+C010,Data Scientist,Recruiter,Screen,2026-09-26,,I001,2026-10-23
+C011,Data Scientist,Referral,Screen,2026-10-19,,I001,2026-10-20
+C012,ML Engineer,Referral,Rejected,2026-09-21,Technical Skills,I006,2026-10-09
+C013,Data Scientist,Job Board,Rejected,2026-10-09,Experience Mismatch,I001,2026-10-24
+C014,Data Scientist,Recruiter,Rejected,2026-10-03,Communication,I003,2026-10-07
+C015,Data Analyst,Job Board,Rejected,2026-08-23,Experience Mismatch,I001,2026-09-09
+C016,ML Engineer,Recruiter,Screen,2026-08-19,,I008,2026-10-23
+C017,Data Scientist,Campus,Rejected,2026-09-09,Technical Skills,I001,2026-09-18
+C018,Data Analyst,Referral,Screen,2026-09-28,,I006,2026-10-17
+C019,Data Analyst,Campus,Applied,2026-10-20,,I002,2026-10-23
+C020,Data Scientist,Campus,Screen,2026-10-18,,I001,2026-10-24
+C021,Data Analyst,Job Board,Rejected,2026-09-02,Technical Skills,I008,2026-09-12
+C022,Data Analyst,Job Board,Rejected,2026-08-15,Experience Mismatch,I001,2026-09-03
+C023,ML Engineer,Job Board,Rejected,2026-09-09,Technical Skills,I008,2026-09-21
+C024,Data Scientist,Campus,Rejected,2026-08-11,Compensation Expectations,I003,2026-08-17
+C025,MLOps Engineer,Referral,Interview,2026-09-03,,I006,2026-10-22
+C026,ML Engineer,Recruiter,Screen,2026-10-16,,I002,2026-10-20
+C027,Data Scientist,Job Board,Screen,2026-10-19,,I005,2026-10-20
+C028,Data Scientist,Job Board,Rejected,2026-10-13,Communication,I007,2026-10-17
+C029,Data Analyst,Referral,Hired,2026-09-21,,I001,2026-10-18
+C030,Data Analyst,Campus,Screen,2026-08-29,,I001,2026-10-22
+C031,Data Analyst,Job Board,Offer,2026-08-15,,I007,2026-10-20
+C032,Data Analyst,Campus,Hired,2026-09-01,,I007,2026-09-19
+C033,ML Engineer,Referral,Withdrawn,2026-08-14,,I002,2026-09-09
+C034,MLOps Engineer,Job Board,Rejected,2026-08-29,Experience Mismatch,I001,2026-09-18
+C035,ML Engineer,Campus,Screen,2026-09-01,,I002,2026-10-24
+C036,ML Engineer,Job Board,Rejected,2026-10-04,Experience Mismatch,I002,2026-10-19
+C037,Data Analyst,Campus,Screen,2026-08-10,,I001,2026-10-21
+C038,Data Analyst,Job Board,Rejected,2026-09-21,Experience Mismatch,I003,2026-09-27
+C039,MLOps Engineer,Job Board,Rejected,2026-09-01,Technical Skills,I005,2026-09-08
+C040,ML Engineer,Recruiter,Interview,2026-09-01,,I003,2026-10-07
+C041,Data Analyst,Job Board,Rejected,2026-09-20,Experience Mismatch,I007,2026-09-29
+C042,Data Scientist,Campus,Screen,2026-08-31,,I007,2026-10-02
+C043,Data Scientist,Job Board,Rejected,2026-09-18,Technical Skills,I008,2026-09-21
+C044,Data Scientist,Job Board,Rejected,2026-08-19,Communication,I003,2026-08-28
+C045,Data Scientist,Referral,Withdrawn,2026-08-10,,I007,2026-09-22
+C046,Data Scientist,Job Board,Applied,2026-10-20,,I004,2026-10-21
+C047,Data Scientist,Job Board,Rejected,2026-10-13,Communication,I003,2026-10-24
+C048,Data Scientist,Job Board,Screen,2026-09-14,,I001,2026-10-21
+C049,Data Analyst,Job Board,Rejected,2026-09-13,Communication,I002,2026-09-18
+C050,ML Engineer,Job Board,Rejected,2026-09-06,Technical Skills,I001,2026-09-26
+C051,ML Engineer,Job Board,Hired,2026-09-28,,I003,2026-10-18
+C052,Data Scientist,Job Board,Rejected,2026-09-07,Technical Skills,I002,2026-09-25
+C053,Data Scientist,Job Board,Screen,2026-09-30,,I004,2026-10-22
+C054,MLOps Engineer,Job Board,Rejected,2026-08-17,Technical Skills,I002,2026-09-03
+C055,Data Analyst,Job Board,Rejected,2026-10-07,Communication,I002,2026-10-22
+C056,Data Analyst,Referral,Hired,2026-08-12,,I007,2026-08-30
+C057,Data Scientist,Job Board,Rejected,2026-09-09,Experience Mismatch,I006,2026-09-18
+C058,Data Analyst,Recruiter,Hired,2026-08-24,,I008,2026-09-14
+C059,Data Scientist,Referral,Rejected,2026-09-10,Communication,I003,2026-09-16
+C060,ML Engineer,Job Board,Rejected,2026-08-18,Technical Skills,I003,2026-09-03
+C061,MLOps Engineer,Recruiter,Screen,2026-09-10,,I003,2026-10-20
+C062,Data Analyst,Campus,Rejected,2026-09-13,Experience Mismatch,I002,2026-09-18
+C063,ML Engineer,Recruiter,Rejected,2026-09-27,Technical Skills,I001,2026-10-10
+C064,Data Analyst,Campus,Rejected,2026-09-22,Experience Mismatch,I003,2026-10-03
+C065,Data Analyst,Recruiter,Offer,2026-09-09,,I001,2026-10-16
+C066,Data Analyst,Recruiter,Rejected,2026-09-10,Experience Mismatch,I003,2026-09-28
+C067,Data Scientist,Job Board,Rejected,2026-09-21,Experience Mismatch,I001,2026-10-03
+C068,Data Scientist,Referral,Hired,2026-08-25,,I007,2026-10-05
+C069,ML Engineer,Referral,Rejected,2026-09-25,Technical Skills,I001,2026-10-15
+C070,Data Scientist,Referral,Hired,2026-09-16,,I002,2026-10-09
+C071,Data Scientist,Campus,Withdrawn,2026-09-11,,I001,2026-10-12
+C072,MLOps Engineer,Job Board,Applied,2026-10-24,,I003,2026-10-24

@@ -1,0 +1,200 @@
+{
+  "summary": {
+    "mode": "rules_only",
+    "scenarios": 20,
+    "accuracy": 0.6,
+    "bad_insights_caught": "4/12",
+    "good_insights_wrongly_rejected": "0/8",
+    "rule_detectable_caught": "4/4"
+  },
+  "rows": [
+    {
+      "id": "G01",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "G02",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "G03",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "G04",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "G05",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "G06",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "G07",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "G08",
+      "expected": "accept",
+      "predicted": "accept",
+      "detectable_by": null,
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": ""
+    },
+    {
+      "id": "B01",
+      "expected": "reject",
+      "predicted": "reject",
+      "detectable_by": "rule",
+      "badge": "Red",
+      "rules_failed": [
+        "numeric_grounding"
+      ],
+      "note": "invented figures (85%, 41)"
+    },
+    {
+      "id": "B02",
+      "expected": "reject",
+      "predicted": "reject",
+      "detectable_by": "rule",
+      "badge": "Red",
+      "rules_failed": [
+        "responsible_use"
+      ],
+      "note": "automated decision language"
+    },
+    {
+      "id": "B03",
+      "expected": "reject",
+      "predicted": "reject",
+      "detectable_by": "rule",
+      "badge": "Red",
+      "rules_failed": [
+        "schema"
+      ],
+      "note": "empty evidence, short recommendation"
+    },
+    {
+      "id": "B04",
+      "expected": "reject",
+      "predicted": "reject",
+      "detectable_by": "rule",
+      "badge": "Unrated",
+      "rules_failed": [
+        "confidence_vs_sample"
+      ],
+      "note": "0.85 confidence while analysis warns of a small sample"
+    },
+    {
+      "id": "B05",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "bottleneck claim with empty possible_bottlenecks, 3 candidates, 0.85 confidence"
+    },
+    {
+      "id": "B06",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "10 is interviewer-weeks; only 4 interviewers are over"
+    },
+    {
+      "id": "B07",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "100% rests on 1 resolved offer"
+    },
+    {
+      "id": "B08",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "5.4 does not exceed 7"
+    },
+    {
+      "id": "B09",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "generic, no action"
+    },
+    {
+      "id": "B10",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "28.6% is below 30%"
+    },
+    {
+      "id": "B11",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "3 of 4 declines, not all; causal claim"
+    },
+    {
+      "id": "B12",
+      "expected": "reject",
+      "predicted": "accept",
+      "detectable_by": "llm",
+      "badge": "Unrated",
+      "rules_failed": [],
+      "note": "bias claim from a rate on 14 candidates; punitive action"
+    }
+  ]
+}

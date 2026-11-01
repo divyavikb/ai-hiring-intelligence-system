@@ -1,0 +1,31 @@
+flowchart TD
+    CSV["data/raw CSVs<br/>candidates, offers,<br/>interview_feedback, interviewer_load"] --> ING["Ingestion + validation<br/>schema, dates, nulls"]
+    ING -->|"validation fails"| STOP["Stop: named dataset error"]
+    ING --> ORCH["LangGraph pipeline<br/>validate, index, analyze, generate, evaluate"]
+
+    ORCH --> AG["Five deterministic insight agents (pandas, no LLM)<br/>Sourcing quality | Rejection patterns | Panel load<br/>Offer insights | Pipeline health"]
+
+    subgraph LOOP["For each agent's analysis"]
+        direction TB
+        RAG["RAG retrieval<br/>per-agent query + agent filter, 3 sections"]
+        RT{"Routing agent<br/>complexity score"}
+        SM["gpt-4o-mini<br/>score under 3"]
+        LG["gpt-4.1-mini<br/>score 3 or more"]
+        GEN["Insight generator with retry + backoff<br/>recommendation, evidence, confidence,<br/>cost_of_insight, alternative<br/>on failure: flagged fallback insight"]
+        RAG --> GEN
+        RT --> SM --> GEN
+        RT --> LG --> GEN
+    end
+
+    KB[("Knowledge base<br/>6 markdown files, 21 sections<br/>Chroma, tagged by agent")] --> RAG
+    AG --> LOOP
+
+    GEN --> EVAL["Evaluation agent"]
+    EVAL --> R["6 rule checks<br/>schema, responsible use, numbers,<br/>confidence, bottleneck, people count"]
+    EVAL --> J["LLM judge<br/>actionability, grounding,<br/>hallucination risk"]
+    R --> BADGE["Badge: Green / Amber / Red / Unrated<br/>judge failure = Unrated, never accepted"]
+    J --> BADGE
+
+    BADGE --> DASH["Streamlit dashboard<br/>insights with badges, cost per agent,<br/>before/after optimization, evaluation"]
+    GEN --> LOG["Logs and reports<br/>routing_log.jsonl, run_*.json, eval_*.json"]
+    LOG --> DASH
